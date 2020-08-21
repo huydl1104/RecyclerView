@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ydl.list">
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RefreshAndMoreActivity1" />
+        <activity android:name=".activity.RefreshAndMoreActivity2" />
+        <activity android:name=".activity.HeaderFooterActivity" />
+        <activity android:name=".activity.InsertRemoveActivity" />
+        <activity android:name=".activity.MultiStyleActivity" />
+        <activity android:name=".activity.StickyHeaderActivity" />
+        <activity android:name=".activity.StickyViewActivity" />
+        <activity android:name=".activity.StickyNormalActivity" />
+        <activity android:name=".activity.StaggeredGridActivity" />
+        <activity android:name=".activity.StaggeredActivity" />
+        <activity android:name=".activity.StaggeredLoadMoreActivity" />
+        <activity android:name=".activity.CollapsingActivity" />
+        <activity android:name=".activity.TouchMoveActivity" />
+        <activity android:name=".activity.TouchMoveActivity2" />
+        <activity android:name=".activity.DeleteAndTopActivity" />
+        <activity android:name=".activity.SpanRecyclerViewActivity" />
+        <activity android:name=".activity.TypeActivity" />
+        <activity android:name=".activity.LoadMoreActivity" />
+        <activity android:name=".activity.LayoutActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.TagRecyclerViewActivity" />
+        <activity android:name=".activity.ScrollActivity" />
+    </application>
+
+</manifest>

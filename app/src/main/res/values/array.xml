@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="image_icons">
+        <item>@drawable/icon_11</item>
+        <item>@drawable/icon_22</item>
+        <item>@drawable/icon_33</item>
+        <item>@drawable/icon_44</item>
+        <item>@drawable/icon_55</item>
+        <item>@drawable/icon_66</item>
+        <item>@drawable/icon_77</item>
+        <item>@drawable/icon_88</item>
+        <item>@drawable/icon_99</item>
+        <item>@drawable/icon_111</item>
+        <item>@drawable/icon_222</item>
+        <item>@drawable/icon_11</item>
+        <item>@drawable/icon_33</item>
+        <item>@drawable/icon_44</item>
+        <item>@drawable/icon_77</item>
+        <item>@drawable/icon_222</item>
+
+    </string-array>
+
+<!--
+    <integer-array name="data_narrow_Image">
+        <item>@drawable/bg_small_autumn_tree_min</item>
+        <item>@drawable/bg_small_kites_min</item>
+        <item>@drawable/bg_small_lake_min</item>
+        <item>@drawable/bg_small_leaves_min</item>
+        <item>@drawable/bg_small_magnolia_trees_min</item>
+        <item>@drawable/bg_small_solda_min</item>
+        <item>@drawable/bg_small_tree_min</item>
+        <item>@drawable/bg_small_tulip_min</item>
+        <item>@drawable/bg_small_autumn_tree_min</item>
+        <item>@drawable/bg_small_kites_min</item>
+        <item>@drawable/bg_small_lake_min</item>
+        <item>@drawable/bg_small_leaves_min</item>
+        <item>@drawable/bg_small_magnolia_trees_min</item>
+        <item>@drawable/bg_small_solda_min</item>
+        <item>@drawable/bg_small_tree_min</item>
+        <item>@drawable/bg_small_tulip_min</item>  <item>@drawable/bg_small_autumn_tree_min</item>
+        <item>@drawable/bg_small_kites_min</item>
+        <item>@drawable/bg_small_lake_min</item>
+        <item>@drawable/bg_small_leaves_min</item>
+        <item>@drawable/bg_small_magnolia_trees_min</item>
+        <item>@drawable/bg_small_solda_min</item>
+        <item>@drawable/bg_small_tree_min</item>
+        <item>@drawable/bg_small_tulip_min</item>  <item>@drawable/bg_small_autumn_tree_min</item>
+        <item>@drawable/bg_small_kites_min</item>
+        <item>@drawable/bg_small_lake_min</item>
+        <item>@drawable/bg_small_leaves_min</item>
+        <item>@drawable/bg_small_magnolia_trees_min</item>
+        <item>@drawable/bg_small_solda_min</item>
+        <item>@drawable/bg_small_tree_min</item>
+        <item>@drawable/bg_small_tulip_min</item>  <item>@drawable/bg_small_autumn_tree_min</item>
+        <item>@drawable/bg_small_kites_min</item>
+        <item>@drawable/bg_small_lake_min</item>
+        <item>@drawable/bg_small_leaves_min</item>
+        <item>@drawable/bg_small_magnolia_trees_min</item>
+        <item>@drawable/bg_small_solda_min</item>
+        <item>@drawable/bg_small_tree_min</item>
+        <item>@drawable/bg_small_tulip_min</item>  <item>@drawable/bg_small_autumn_tree_min</item>
+        <item>@drawable/bg_small_kites_min</item>
+        <item>@drawable/bg_small_lake_min</item>
+        <item>@drawable/bg_small_leaves_min</item>
+        <item>@drawable/bg_small_magnolia_trees_min</item>
+        <item>@drawable/bg_small_solda_min</item>
+        <item>@drawable/bg_small_tree_min</item>
+        <item>@drawable/bg_small_tulip_min</item>
+
+    </integer-array>-->
+
+</resources>
