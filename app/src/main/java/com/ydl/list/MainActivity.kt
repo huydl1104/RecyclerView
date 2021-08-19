@@ -2,66 +2,83 @@ package com.ydl.list
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.ydl.list.activity.*
+import com.ydl.list.adapter.MainAdapter
+import com.ydl.list.adapter.MyClickListener
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity(){
+
+
+    val list = arrayListOf(
+        "下拉刷新，上拉加载更多，自动加载下一页",
+        "下拉刷新，上拉加载更多，双列数据",
+        "支持头部和底部自定义布局的刷新控件",
+        "支持插入或者删除数据",
+        "多种type复杂类型页面",
+        "粘贴头部list，采用ItemDecoration实现",
+        "粘贴头部list，采用CoordinatorLayout实现",
+        "原生控件实现，采用ItemDecoration实现",
+        "规则瀑布流效果1",
+        "不规则瀑布流效果2",
+        "不规则瀑布流效果3",
+        "CoordinatorLayout的效果",
+        "RecyclerView条目Item拖拽排序与滑动删除1",
+        "RecyclerView条目Item拖拽排序与滑动删除2",
+        "支持侧滑逻辑，左右滑动出现删除按钮",
+        "recyclerView的setSpanSizeLookup",
+        "复杂type页面的UI效果，支持ItemTouchHelper",
+        "recyclerView的上拉加载更多操作",
+        "使用阿里vlayout控件实现复杂页面",
+        "主页面",
+        "流标签",
+        "整页滑动"
+    )
+
+    private val mainAdapter = MainAdapter(list).apply {
+        listener = object :MyClickListener{
+            override fun onClick(postion: Int) {
+                when(postion){
+                    0->{customStartActivity(RefreshAndMoreActivity1::class.java)}
+                    1->{customStartActivity(RefreshAndMoreActivity2::class.java)}
+                    2->{customStartActivity(HeaderFooterActivity::class.java)}
+                    3->{customStartActivity(InsertRemoveActivity::class.java)}
+                    4->{customStartActivity(MultiStyleActivity::class.java)}
+                    5->{customStartActivity(StickyHeaderActivity::class.java)}
+                    6->{customStartActivity(StickyViewActivity::class.java)}
+                    7->{customStartActivity(StickyNormalActivity::class.java)}
+                    8->{customStartActivity(StaggeredGridActivity::class.java)}
+                    9->{customStartActivity(StaggeredActivity::class.java)}
+                    10->{customStartActivity(StaggeredLoadMoreActivity::class.java)}
+                    11->{customStartActivity(CollapsingActivity::class.java)}
+                    12->{customStartActivity(TouchMoveActivity::class.java)}
+                    13->{customStartActivity(TouchMoveActivity2::class.java)}
+                    14->{customStartActivity(DeleteAndTopActivity::class.java)}
+                    15->{customStartActivity(SpanRecyclerViewActivity::class.java)}
+                    16->{customStartActivity(TypeActivity::class.java)}
+                    17->{customStartActivity(LoadMoreActivity::class.java)}
+                    18->{customStartActivity(LayoutActivity::class.java)}
+                    19->{customStartActivity(HomeActivity::class.java)}
+                    20->{customStartActivity(TagRecyclerViewActivity::class.java)}
+                    21->{customStartActivity(ScrollActivity::class.java)}
+                }
+            }
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        button1.setOnClickListener(this)
-        button2.setOnClickListener(this)
-        button3.setOnClickListener(this)
-        button4.setOnClickListener(this)
-        button5.setOnClickListener(this)
-        button6.setOnClickListener(this)
-        button7.setOnClickListener(this)
-        button8.setOnClickListener(this)
-        button9.setOnClickListener(this)
-        button10.setOnClickListener(this)
-        button11.setOnClickListener(this)
-        button12.setOnClickListener(this)
-        button13.setOnClickListener(this)
-        button14.setOnClickListener(this)
-        button15.setOnClickListener(this)
-        button16.setOnClickListener(this)
-        button17.setOnClickListener(this)
-        button18.setOnClickListener(this)
-        button19.setOnClickListener(this)
-        button20.setOnClickListener(this)
-        button21.setOnClickListener(this)
-        button22.setOnClickListener(this)
-    }
-
-    override fun onClick(view: View) {
-        when(view.id){
-            R.id.button1->{startActivity(Intent(this, RefreshAndMoreActivity1::class.java)) }
-            R.id.button2->{startActivity(Intent(this, RefreshAndMoreActivity2::class.java)) }
-            R.id.button3->{startActivity(Intent(this, HeaderFooterActivity::class.java)) }
-            R.id.button4->{startActivity(Intent(this, InsertRemoveActivity::class.java)) }
-            R.id.button5->{startActivity(Intent(this, MultiStyleActivity::class.java)) }
-            R.id.button6->{startActivity(Intent(this, StickyHeaderActivity::class.java)) }
-            R.id.button7->{startActivity(Intent(this, StickyViewActivity::class.java)) }
-            R.id.button8->{startActivity(Intent(this, StickyNormalActivity::class.java)) }
-            R.id.button9->{startActivity(Intent(this, StaggeredGridActivity::class.java)) }
-            R.id.button10->{startActivity(Intent(this, StaggeredActivity::class.java)) }
-            R.id.button11->{startActivity(Intent(this, StaggeredLoadMoreActivity::class.java)) }
-            R.id.button12->{startActivity(Intent(this, CollapsingActivity::class.java)) }
-            R.id.button13->{startActivity(Intent(this, TouchMoveActivity::class.java)) }
-            R.id.button14->{startActivity(Intent(this, TouchMoveActivity2::class.java)) }
-            R.id.button15->{startActivity(Intent(this, DeleteAndTopActivity::class.java)) }
-            R.id.button16->{startActivity(Intent(this, SpanRecyclerViewActivity::class.java)) }
-            R.id.button17->{startActivity(Intent(this, TypeActivity::class.java)) }
-            R.id.button18->{startActivity(Intent(this, LoadMoreActivity::class.java)) }
-            R.id.button19->{startActivity(Intent(this, LayoutActivity::class.java)) }
-            R.id.button20->{startActivity(Intent(this, HomeActivity::class.java)) }
-            R.id.button21->{startActivity(Intent(this, TagRecyclerViewActivity::class.java)) }
-            R.id.button22->{startActivity(Intent(this, ScrollActivity::class.java)) }
+        recyclerView.apply {
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            adapter = mainAdapter
         }
+
     }
+
+    private fun customStartActivity(java: Class<*>) =
+        startActivity(Intent(this, java))
+
 }
