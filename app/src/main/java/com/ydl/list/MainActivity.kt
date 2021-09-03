@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity(){
         "使用阿里vlayout控件实现复杂页面",
         "主页面",
         "流标签",
-        "整页滑动"
+        "整页滑动",
+        "EditText下拉列表"
     )
 
     private val mainAdapter = MainAdapter(list).apply {
@@ -63,6 +64,7 @@ class MainActivity : AppCompatActivity(){
                     19->{customStartActivity(HomeActivity::class.java)}
                     20->{customStartActivity(TagRecyclerViewActivity::class.java)}
                     21->{customStartActivity(ScrollActivity::class.java)}
+                    22->{customStartActivity(EditActivity::class.java)}
                 }
             }
         }

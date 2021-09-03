@@ -39,6 +39,7 @@
         <activity android:name=".activity.HomeActivity" />
         <activity android:name=".activity.TagRecyclerViewActivity" />
         <activity android:name=".activity.ScrollActivity" />
+        <activity android:name=".activity.EditActivity" />
     </application>
 
 </manifest>
