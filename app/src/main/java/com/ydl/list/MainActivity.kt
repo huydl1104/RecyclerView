@@ -8,13 +8,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.ydl.list.activity.*
 import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
+import com.ydl.list.aop.AopActivity
 import kotlinx.android.synthetic.main.activity_recycler.*
 
 class MainActivity : AppCompatActivity() {
 
     val list = arrayListOf(
         "RecyclerView列表",
-        "AndroidTestProject"
+        "aopProject"
     )
 
     private val mainAdapter = MainAdapter(list).apply {
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             override fun onClick(postion: Int) {
                 when(postion){
                    0 -> customStartActivity(RecyclerActivity::class.java)
+                   1 -> customStartActivity(AopActivity::class.java)
                 }
             }
         }
