@@ -14,6 +14,12 @@ android {
         versionCode 1
         versionName "1.0"
 
+//        // 日志打印开关
+//        buildConfigField('boolean', 'LOG_ENABLE', '' + LOG_ENABLE + '')
+//        // 测试包下的 BuglyId
+//        buildConfigField('String', 'BUGLY_ID', '"' + BUGLY_ID + '"')
+//        // 测试服务器的主机地址
+//        buildConfigField('String', 'HOST_URL', '"' + HOST_URL + '"')
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     // 支持 Java JDK 8

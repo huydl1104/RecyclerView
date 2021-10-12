@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.OrientationHelper
 import com.ydl.list.R
 import com.ydl.list.adapter.ScrollAdapter
-import com.ydl.list.app.OnPagerListener
+import com.ydl.list.listener.OnPagerListener
 import com.ydl.list.data.DataProvider
 import com.ydl.list.manager.PagerLayoutManager
 import kotlinx.android.synthetic.main.activity_recyclerview.*
@@ -24,7 +24,8 @@ class ScrollActivity:AppCompatActivity(){
         val adapter = ScrollAdapter(this)
         recyclerView.setAdapter(adapter)
         recyclerView.setLayoutManager(viewPagerLayoutManager)
-        viewPagerLayoutManager.setOnViewPagerListener(object : OnPagerListener {
+        viewPagerLayoutManager.setOnViewPagerListener(object :
+            OnPagerListener {
            override fun onInitComplete() {
                 println("OnPagerListener---onInitComplete--" + "初始化完成")
             }

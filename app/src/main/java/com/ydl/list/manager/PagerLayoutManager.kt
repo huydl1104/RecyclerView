@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.OnChildAttachStateChangeListener
 import androidx.recyclerview.widget.RecyclerView.Recycler
 import com.ydl.bannerlib.snap.ScrollPageHelper
-import com.ydl.list.app.OnPagerListener
+import com.ydl.list.listener.OnPagerListener
 
 class PagerLayoutManager @JvmOverloads constructor(
     context: Context?,

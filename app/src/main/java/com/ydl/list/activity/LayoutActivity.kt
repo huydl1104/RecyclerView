@@ -19,7 +19,7 @@ import com.ydl.bannerlib.view.CustomBannerView
 import com.ydl.list.R
 import com.ydl.list.adapter.CustomBannerAdapter1
 import com.ydl.list.adapter.NarrowImageAdapter
-import com.ydl.list.app.ViewType
+import com.ydl.list.contants.ViewType
 import com.ydl.list.data.DataProvider
 import com.ydl.listlib.adapter.BaseDelegateAdapter
 import com.ydl.listlib.viewholder.BaseViewHolder

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.ydl.list.R
+import com.ydl.list.aop.actions.CheckNet
 import kotlinx.android.synthetic.main.activity_aop.*
 
 class AopActivity : AppCompatActivity() {
