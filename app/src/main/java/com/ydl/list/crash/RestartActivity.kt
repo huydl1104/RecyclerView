@@ -1,4 +1,4 @@
-package com.ydl.list.utils.crash
+package com.ydl.list.crash
 
 import android.app.Activity
 import android.content.Context

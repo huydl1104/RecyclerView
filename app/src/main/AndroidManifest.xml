@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".utils.crash.RestartActivity"
+            android:name="com.ydl.list.crash.RestartActivity"
             android:exported="true" />
         <activity
-            android:name=".utils.crash.CrashActivity"
+            android:name="com.ydl.list.crash.CrashActivity"
             android:exported="true" />
         <activity
             android:name=".aop.AopActivity"

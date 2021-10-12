@@ -1,4 +1,4 @@
-package com.ydl.list.utils.crash
+package com.ydl.list.crash
 
 import android.annotation.SuppressLint
 import android.app.Application

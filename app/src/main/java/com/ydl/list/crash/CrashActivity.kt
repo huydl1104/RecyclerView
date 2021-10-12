@@ -1,4 +1,4 @@
-package com.ydl.list.utils.crash
+package com.ydl.list.crash
 
 import android.app.Application
 import android.content.Intent
@@ -8,9 +8,6 @@ import com.ydl.list.R
 import java.util.regex.Pattern
 
 class CrashActivity : AppCompatActivity() {
-
-
-
 
     companion object{
 
