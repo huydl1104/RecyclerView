@@ -1,3 +1,4 @@
 rootProject.name='ListApplication'
 include ':app'
 include ':listlib'
+include ':library:base'
