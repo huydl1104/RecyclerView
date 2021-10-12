@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.ListApplication.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ListApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ListApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

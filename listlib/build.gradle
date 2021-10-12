@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.1"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
@@ -28,15 +28,18 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.3.1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    api 'com.android.support:design:28.0.0'
-    api "androidx.recyclerview:recyclerview:1.0.0-beta01"
-//    api 'com.google.android.material:material:1.2.0'
+    // AndroidX 库：https://github.com/androidx/androidx
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    // Material 库：https://github.com/material-components/material-components-android
+    implementation 'com.google.android.material:material:1.4.0'
+
+    api 'com.android.support:design:29.0.0'
+    api "androidx.recyclerview:recyclerview:1.2.0"
     api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     api 'com.alibaba.android:vlayout:1.2.8@aar'
 
