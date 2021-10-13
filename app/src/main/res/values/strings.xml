@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">ListApplication</string>
-    <string name="common_network_hint">网络不可用，请检查网络设置</string>
-
     <!-- 通用的 -->
     <string name="common_loading">加载中&#8230;</string>
 
