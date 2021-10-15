@@ -6,12 +6,13 @@
     android:layout_height="wrap_content">
 
     <Button
+        android:layout_margin="@dimen/dp_10"
         android:gravity="center"
         android:id="@+id/button_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:padding="10dp"
-        android:background="#999999" />
+        android:background="#55999999" />
 
 </LinearLayout>

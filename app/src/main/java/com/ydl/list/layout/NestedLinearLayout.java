@@ -51,11 +51,15 @@ public class NestedLinearLayout extends LinearLayout implements NestedScrollingC
 
     public NestedLinearLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        //设置此属性后不会执行 draw 绘制
         setWillNotDraw(false);
         mChildHelper = new NestedScrollingChildHelper(this);
         mParentHelper = new NestedScrollingParentHelper(this);
+        //设置 child 支持 嵌套 scroll
         setNestedScrollingEnabled(true);
+        //滚动之前可以触摸的距离
         mTouchSlop = ViewConfiguration.get(getContext()).getScaledTouchSlop();
+        //滑动的最大，最小速度
         mMaximumVelocity = ViewConfiguration.get(getContext()).getScaledMaximumFlingVelocity();
         mMinimumVelocity = ViewConfiguration.get(getContext()).getScaledMinimumFlingVelocity();
     }
