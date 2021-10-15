@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.hjq.demo.widget.StatusLayout
+        <com.ydl.list.views.StatusLayout
             android:id="@+id/hl_image_select_hint"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -30,9 +30,9 @@
                 tools:listitem="@layout/image_select_item"
                 tools:spanCount="3" />
 
-        </com.hjq.demo.widget.StatusLayout>
+        </com.ydl.list.views.StatusLayout>
 
-        <com.hjq.widget.view.FloatActionButton
+        <com.ydl.list.views.FloatActionButton
             android:id="@+id/fab_image_select_floating"
             android:layout_width="@dimen/dp_60"
             android:layout_height="@dimen/dp_60"

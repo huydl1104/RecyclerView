@@ -64,6 +64,6 @@ public final class AppConfig {
      */
     public static String getHostUrl() {
 //        return BuildConfig.HOST_URL;
-        return "";
+        return  "https://www.baidu.com/";
     }
 }

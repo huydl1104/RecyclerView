@@ -52,6 +52,8 @@
         <entry key="app/src/main/res/layout/date_dialog.xml" value="0.30842391304347827" />
         <entry key="app/src/main/res/layout/image_preview_activity.xml" value="0.20208333333333334" />
         <entry key="app/src/main/res/layout/image_preview_item.xml" value="0.29393115942028986" />
+        <entry key="app/src/main/res/layout/image_select_activity.xml" value="0.36277173913043476" />
+        <entry key="app/src/main/res/layout/image_select_item.xml" value="0.36277173913043476" />
         <entry key="app/src/main/res/layout/input_dialog.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/layout/item_main.xml" value="0.14990942028985507" />
         <entry key="app/src/main/res/layout/menu_dialog.xml" value="0.21197916666666666" />
