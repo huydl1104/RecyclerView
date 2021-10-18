@@ -53,7 +53,7 @@ public final class ImageSelectActivity extends AppActivity
     }
 
     @Log
-    @Permissions({Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE,Permission.MANAGE_EXTERNAL_STORAGE})
+    @Permissions({Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE})
     public static void start(BaseActivity activity, int maxSelect, OnPhotoSelectListener listener) {
         if (maxSelect < 1) {
             // 最少要选择一个图片
