@@ -14,6 +14,7 @@ import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
 import com.ydl.list.aop.AopActivity
 import com.ydl.list.ui.activity.DialogActivity
+import com.ydl.list.ui.activity.GuideActivity
 import com.ydl.list.ui.activity.ImageSelectActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_recycler.*
@@ -26,7 +27,8 @@ class MainActivity : BaseActivity() {
         "aopTest",
         "browser",
         "Camera",
-        "dialog"
+        "dialog",
+        "Guide"
     )
 
     private val mainAdapter = MainAdapter(list).apply {
@@ -35,21 +37,14 @@ class MainActivity : BaseActivity() {
                 when(postion){
                    0 -> customStartActivity(RecyclerActivity::class.java)
                    1 -> customStartActivity(AopActivity::class.java)
-                   2 -> BrowserActivity.start(this@MainActivity,
-                       "https://www.baidu.com"
-                   )
-                   3->{
-                       ImageSelectActivity.start(this@MainActivity,
+                   2 -> BrowserActivity.start(this@MainActivity, "https://www.baidu.com")
+                   3->{ ImageSelectActivity.start(this@MainActivity,
                            object : ImageSelectActivity.OnPhotoSelectListener {
-                               override fun onSelected(data: List<String?>) {
-                                   ToastUtils.show("选择了$data")
-                               }
-
-                               override fun onCancel() {
-                                   ToastUtils.show("取消了")
-                               }
+                               override fun onSelected(data: List<String?>) { ToastUtils.show("选择了$data") }
+                               override fun onCancel() { ToastUtils.show("取消了") }
                            }) }
-                    4->{customStartActivity(DialogActivity::class.java)}
+                    4->{ customStartActivity(DialogActivity::class.java) }
+                    5->{ GuideActivity.start(this@MainActivity) }
                 }
             }
         }

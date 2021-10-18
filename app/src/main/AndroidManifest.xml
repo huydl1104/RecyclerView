@@ -99,6 +99,7 @@
         <activity android:name=".activity.ScrollActivity" />
         <activity android:name=".activity.EditActivity" />
         <activity android:name=".ui.activity.CameraActivity" />
+        <activity android:name=".ui.activity.GuideActivity" />
     </application>
 
 </manifest>
