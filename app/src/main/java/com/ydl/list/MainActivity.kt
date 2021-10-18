@@ -13,6 +13,7 @@ import com.ydl.list.activity.*
 import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
 import com.ydl.list.aop.AopActivity
+import com.ydl.list.ui.activity.DialogActivity
 import com.ydl.list.ui.activity.ImageSelectActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_recycler.*
@@ -24,7 +25,8 @@ class MainActivity : BaseActivity() {
         "RecyclerView列表",
         "aopTest",
         "browser",
-        "Camera"
+        "Camera",
+        "dialog"
     )
 
     private val mainAdapter = MainAdapter(list).apply {
@@ -47,6 +49,7 @@ class MainActivity : BaseActivity() {
                                    ToastUtils.show("取消了")
                                }
                            }) }
+                    4->{customStartActivity(DialogActivity::class.java)}
                 }
             }
         }
