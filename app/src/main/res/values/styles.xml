@@ -120,5 +120,14 @@
         <item name="android:textColor">@drawable/countdown_color_selector</item>
         <item name="android:textSize">@dimen/sp_12</item>
     </style>
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+
 
 </resources>

@@ -117,7 +117,7 @@ public abstract class AppActivity extends BaseActivity
     /**
      * 状态栏字体深色模式
      */
-    protected boolean isStatusBarDarkFont() {
+    public boolean isStatusBarDarkFont() {
         return true;
     }
 

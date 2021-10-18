@@ -1,13 +1,8 @@
 package com.ydl.list
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.base.BaseActivity
-import com.hjq.bar.OnTitleBarListener
 import com.hjq.toast.ToastUtils
 import com.ydl.list.activity.*
 import com.ydl.list.adapter.MainAdapter
@@ -23,12 +18,13 @@ import kotlinx.android.synthetic.main.activity_recycler.recyclerView
 class MainActivity : BaseActivity() {
 
     val list = arrayListOf(
-        "RecyclerView列表",
+        "RecyclerView",
         "aopTest",
         "browser",
         "Camera",
         "dialog",
-        "Guide"
+        "Guide",
+        "CoordinatorLayout"
     )
 
     private val mainAdapter = MainAdapter(list).apply {
@@ -43,8 +39,10 @@ class MainActivity : BaseActivity() {
                                override fun onSelected(data: List<String?>) { ToastUtils.show("选择了$data") }
                                override fun onCancel() { ToastUtils.show("取消了") }
                            }) }
-                    4->{ customStartActivity(DialogActivity::class.java) }
-                    5->{ GuideActivity.start(this@MainActivity) }
+                   4->{ customStartActivity(DialogActivity::class.java) }
+                   5->{ GuideActivity.start(this@MainActivity) }
+                   6->{ CoordinatorLayoutActivity.start(this@MainActivity)}
+
                 }
             }
         }
