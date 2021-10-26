@@ -29,38 +29,40 @@ class MainActivity : BaseActivity() {
         "CoordinatorList"
     )
 
-    private val mainAdapter = MainAdapter(list).apply {
-        listener = object : MyClickListener {
-            override fun onClick(postion: Int) {
-                when(postion){
-                   0 -> customStartActivity(RecyclerActivity::class.java)
-                   1 -> customStartActivity(AopActivity::class.java)
-                   2 -> BrowserActivity.start(this@MainActivity, "https://www.baidu.com")
-                   3->{ ImageSelectActivity.start(this@MainActivity,
-                           object : ImageSelectActivity.OnPhotoSelectListener {
-                               override fun onSelected(data: List<String?>) { ToastUtils.show("选择了$data") }
-                               override fun onCancel() { ToastUtils.show("取消了") }
-                           }) }
-                   4->{ customStartActivity(DialogActivity::class.java) }
-                   5->{ GuideActivity.start(this@MainActivity) }
-                   6->{ CoordinatorListActivity.start(this@MainActivity)}
-
-                }
-            }
-        }
-    }
-
     override fun getLayoutId(): Int {
         return R.layout.activity_main
     }
 
     override fun initView() {
+        val mainAdapter = MainAdapter(list).apply {
+            listener = object : MyClickListener {
+                override fun onClick(postion: Int) {
+                    jump(postion)
+                }
+            }
+        }
         recyclerView.apply {
             layoutManager = GridLayoutManager(this@MainActivity,2)
             adapter = mainAdapter
         }
     }
 
+    private fun jump(postion: Int){
+        when(postion){
+            0 -> customStartActivity(RecyclerActivity::class.java)
+            1 -> customStartActivity(AopActivity::class.java)
+            2 -> BrowserActivity.start(this@MainActivity, "https://www.baidu.com")
+            3->{ ImageSelectActivity.start(this@MainActivity,
+                object : ImageSelectActivity.OnPhotoSelectListener {
+                    override fun onSelected(data: List<String?>) { ToastUtils.show("选择了$data") }
+                    override fun onCancel() { ToastUtils.show("取消了") }
+                }) }
+            4->{ customStartActivity(DialogActivity::class.java) }
+            5->{ GuideActivity.start(this@MainActivity) }
+            6->{ CoordinatorListActivity.start(this@MainActivity)}
+
+        }
+    }
     override fun initData() {
 
     }

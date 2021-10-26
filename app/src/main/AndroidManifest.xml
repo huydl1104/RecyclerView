@@ -26,7 +26,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
-        tools:targetApi="n">
+        tools:targetApi="n" >
+
+        <activity
+            android:name=".coordinator.activity.CoordinatorSimpleActivity"
+            android:exported="true" />
         <activity
             android:name=".coordinator.activity.CoordinatorListActivity"
             android:exported="true" />
@@ -40,7 +44,7 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
-            android:grantUriPermissions="true">
+            android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
@@ -64,12 +68,10 @@
         <activity
             android:name=".aop.AopActivity"
             android:exported="true" />
-        <activity
-            android:name=".coordinator.activity.CoordinatorSimpleActivity"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -102,7 +104,7 @@
         <activity android:name=".activity.EditActivity" />
         <activity android:name=".ui.activity.CameraActivity" />
         <activity android:name=".ui.activity.GuideActivity" />
-        <activity android:name=".ui.activity.TestHomeActivity" />
+        <activity android:name=".coordinator.activity.CoordinatorSimple1Activity" />
     </application>
 
 </manifest>

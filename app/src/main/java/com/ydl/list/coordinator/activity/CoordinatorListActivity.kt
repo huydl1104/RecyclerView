@@ -18,25 +18,32 @@ class CoordinatorListActivity : BaseActivity() {
     }
 
     val list = arrayListOf(
-        "simple"
+        "simple",
+        "simple1"
     )
 
-    private val mainAdapter = MainAdapter(list).apply {
-        listener = object : MyClickListener {
-            override fun onClick(postion: Int) {
-                when(postion){
-                    0 -> { CoordinatorSimpleActivity.start(this@CoordinatorListActivity) }
-                }
-            }
-        }
-    }
 
     override fun getLayoutId(): Int = R.layout.activity_coordinator_list
 
     override fun initView() {
+        val mainAdapter = MainAdapter(list).apply {
+            listener = object : MyClickListener {
+                override fun onClick(postion: Int) {
+                   jump(postion)
+                }
+            }
+        }
+
         coordinator.apply {
             layoutManager = GridLayoutManager(this@CoordinatorListActivity,2)
             adapter = mainAdapter
+        }
+    }
+
+    private fun jump(postion: Int) {
+        when(postion){
+            0 -> { CoordinatorSimpleActivity.start(this@CoordinatorListActivity) }
+            1 -> { CoordinatorSimple1Activity.start(this@CoordinatorListActivity) }
         }
     }
 
