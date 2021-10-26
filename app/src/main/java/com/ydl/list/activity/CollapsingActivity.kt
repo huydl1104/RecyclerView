@@ -1,5 +1,7 @@
 package com.ydl.list.activity
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -13,12 +15,19 @@ import com.ydl.bannerlib.adapter.StaticPagerAdapter
 import com.ydl.bannerlib.hintview.ColorPointHintView
 import com.ydl.list.R
 import com.ydl.list.adapter.PersonAdapter
+import com.ydl.list.coordinator.activity.CoordinatorSimple2Activity
 import com.ydl.list.data.AddInfo
 import com.ydl.list.data.DataProvider
 import com.ydl.listlib.interfaces.OnLoadMoreListener
 import kotlinx.android.synthetic.main.activity_collapsing.*
 
 class CollapsingActivity :AppCompatActivity() {
+
+    companion object{
+        fun start(context: Context){
+            context.startActivity(Intent(context, CollapsingActivity::class.java))
+        }
+    }
 
     var adapter: PersonAdapter? = null
 

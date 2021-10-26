@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.base.BaseActivity
 import com.ydl.list.R
+import com.ydl.list.activity.CollapsingActivity
 import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
 import kotlinx.android.synthetic.main.activity_coordinator_list.*
@@ -19,7 +20,9 @@ class CoordinatorListActivity : BaseActivity() {
 
     val list = arrayListOf(
         "simple",
-        "simple1"
+        "simple1",
+        "simple2",
+        "simple3"
     )
 
 
@@ -44,6 +47,8 @@ class CoordinatorListActivity : BaseActivity() {
         when(postion){
             0 -> { CoordinatorSimpleActivity.start(this@CoordinatorListActivity) }
             1 -> { CoordinatorSimple1Activity.start(this@CoordinatorListActivity) }
+            2 -> { CoordinatorSimple2Activity.start(this@CoordinatorListActivity) }
+            3 -> { CollapsingActivity.start(this@CoordinatorListActivity)}
         }
     }
 

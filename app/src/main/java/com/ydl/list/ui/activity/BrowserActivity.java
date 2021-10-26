@@ -1,4 +1,4 @@
-package com.ydl.list;
+package com.ydl.list.ui.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,10 +15,10 @@ import androidx.annotation.NonNull;
 
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
 import com.scwang.smart.refresh.layout.api.RefreshLayout;
+import com.ydl.list.R;
 import com.ydl.list.aop.actions.CheckNet;
 import com.ydl.list.aop.actions.Log;
 import com.ydl.list.ui.action.StatusAction;
-import com.ydl.list.ui.activity.AppActivity;
 import com.ydl.list.views.BrowserView;
 import com.ydl.list.views.StatusLayout;
 import com.scwang.smart.refresh.layout.listener.OnRefreshListener;

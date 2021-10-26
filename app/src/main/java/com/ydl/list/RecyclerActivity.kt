@@ -25,7 +25,6 @@ class RecyclerActivity : AppCompatActivity(){
         "规则瀑布流效果1",
         "不规则瀑布流效果2",
         "不规则瀑布流效果3",
-        "CoordinatorLayout的效果",
         "RecyclerView条目Item拖拽排序与滑动删除1",
         "RecyclerView条目Item拖拽排序与滑动删除2",
         "支持侧滑逻辑，左右滑动出现删除按钮",
@@ -54,18 +53,17 @@ class RecyclerActivity : AppCompatActivity(){
                     8->{customStartActivity(StaggeredGridActivity::class.java)}
                     9->{customStartActivity(StaggeredActivity::class.java)}
                     10->{customStartActivity(StaggeredLoadMoreActivity::class.java)}
-                    11->{customStartActivity(CollapsingActivity::class.java)}
-                    12->{customStartActivity(TouchMoveActivity::class.java)}
-                    13->{customStartActivity(TouchMoveActivity2::class.java)}
-                    14->{customStartActivity(DeleteAndTopActivity::class.java)}
-                    15->{customStartActivity(SpanRecyclerViewActivity::class.java)}
-                    16->{customStartActivity(TypeActivity::class.java)}
-                    17->{customStartActivity(LoadMoreActivity::class.java)}
-                    18->{customStartActivity(LayoutActivity::class.java)}
-                    19->{customStartActivity(HomeActivity::class.java)}
-                    20->{customStartActivity(TagRecyclerViewActivity::class.java)}
-                    21->{customStartActivity(ScrollActivity::class.java)}
-                    22->{customStartActivity(EditActivity::class.java)}
+                    11->{customStartActivity(TouchMoveActivity::class.java)}
+                    12->{customStartActivity(TouchMoveActivity2::class.java)}
+                    13->{customStartActivity(DeleteAndTopActivity::class.java)}
+                    14->{customStartActivity(SpanRecyclerViewActivity::class.java)}
+                    15->{customStartActivity(TypeActivity::class.java)}
+                    16->{customStartActivity(LoadMoreActivity::class.java)}
+                    17->{customStartActivity(LayoutActivity::class.java)}
+                    18->{customStartActivity(HomeActivity::class.java)}
+                    19->{customStartActivity(TagRecyclerViewActivity::class.java)}
+                    20->{customStartActivity(ScrollActivity::class.java)}
+                    21->{customStartActivity(EditActivity::class.java)}
                 }
             }
         }

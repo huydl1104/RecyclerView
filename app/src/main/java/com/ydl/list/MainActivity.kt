@@ -9,7 +9,7 @@ import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
 import com.ydl.list.aop.AopActivity
 import com.ydl.list.coordinator.activity.CoordinatorListActivity
-import com.ydl.list.coordinator.activity.CoordinatorSimpleActivity
+import com.ydl.list.ui.activity.BrowserActivity
 import com.ydl.list.ui.activity.DialogActivity
 import com.ydl.list.ui.activity.GuideActivity
 import com.ydl.list.ui.activity.ImageSelectActivity

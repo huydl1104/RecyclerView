@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ListApplication</string>
     <string name="coordinator">coordinator</string>
+    <string name="recyclerList">recyclerList</string>
     <!-- 通用的 -->
     <string name="common_loading">加载中&#8230;</string>
 
@@ -260,7 +261,6 @@
     <string name="imageview_description">imageview</string>
 
 
-
     <string name="lorem">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 		In mollis est vitae erat laoreet consectetur. Mauris dui mauris,
@@ -278,5 +278,6 @@
 		Aenean ullamcorper dolor non condimentum congue. Aenean mauris nunc, pellentesque at placerat vitae,
 		aliquet quis orci. Curabitur maximus augue ut bibendum sagittis.
 	</string>
-
+    <string name="title_mup_name">Saúl Molinero</string>
+    <string name="subtitle_mup">Here I am with a subtitle</string>
 </resources>
