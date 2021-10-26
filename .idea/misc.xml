@@ -52,6 +52,7 @@
         <entry key="app/src/main/res/layout/activity_aop.xml" value="0.3220108695652174" />
         <entry key="app/src/main/res/layout/activity_browser.xml" value="0.29393115942028986" />
         <entry key="app/src/main/res/layout/activity_coordinator.xml" value="0.24010416666666667" />
+        <entry key="app/src/main/res/layout/activity_coordinator_list.xml" value="0.3446557971014493" />
         <entry key="app/src/main/res/layout/activity_crash.xml" value="0.317481884057971" />
         <entry key="app/src/main/res/layout/activity_dialog.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />

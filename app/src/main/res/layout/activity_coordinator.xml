@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.ydl.list.coordinator.CoordinatorTabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.ydl.list.coordinator.view.CoordinatorTabLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/coordinatortablayout"
     android:layout_width="match_parent"
@@ -10,4 +10,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-</com.ydl.list.coordinator.CoordinatorTabLayout>
+
+</com.ydl.list.coordinator.view.CoordinatorTabLayout>

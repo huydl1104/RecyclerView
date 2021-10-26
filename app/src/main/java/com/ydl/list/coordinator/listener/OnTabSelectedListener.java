@@ -1,4 +1,4 @@
-package com.ydl.list.coordinator;
+package com.ydl.list.coordinator.listener;
 
 import com.google.android.material.tabs.TabLayout;
 

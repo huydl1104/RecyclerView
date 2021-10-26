@@ -1,4 +1,4 @@
-package com.ydl.list
+package com.ydl.list.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import androidx.recyclerview.widget.RecyclerView
-
-
+import com.ydl.list.R
+import com.ydl.list.adapter.RecyclerAdapter
 
 
 /**

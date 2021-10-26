@@ -1,4 +1,4 @@
-package com.ydl.list
+package com.ydl.list.coordinator.activity
 
 import android.content.Context
 import android.content.Intent
@@ -9,14 +9,16 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 
 import com.example.base.FragmentPagerAdapter
+import com.ydl.list.R
+import com.ydl.list.ui.fragments.TestCoorFragment
 import kotlinx.android.synthetic.main.activity_coordinator.*
 
 
-class CoordinatorLayoutActivity : AppCompatActivity() {
+class CoordinatorSimpleActivity : AppCompatActivity() {
 
     companion object{
         fun start(context: Context){
-            context.startActivity(Intent(context,CoordinatorLayoutActivity::class.java))
+            context.startActivity(Intent(context, CoordinatorSimpleActivity::class.java))
         }
     }
 
@@ -24,7 +26,8 @@ class CoordinatorLayoutActivity : AppCompatActivity() {
         R.mipmap.bg_android,
         R.mipmap.bg_ios,
         R.mipmap.bg_js,
-        R.mipmap.bg_other)
+        R.mipmap.bg_other
+    )
     private  var mColorArray = intArrayOf(
         android.R.color.holo_blue_light,
         android.R.color.holo_red_light,

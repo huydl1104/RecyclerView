@@ -1,4 +1,4 @@
-package com.ydl.list.coordinator;
+package com.ydl.list.coordinator.view;
 
 import android.app.Activity;
 import android.content.Context;
@@ -26,6 +26,8 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.ydl.list.R;
+import com.ydl.list.coordinator.listener.LoadHeaderImagesListener;
+import com.ydl.list.coordinator.listener.OnTabSelectedListener;
 import com.ydl.list.utils.Utils;
 
 

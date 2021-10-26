@@ -8,6 +8,8 @@ import com.ydl.list.activity.*
 import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
 import com.ydl.list.aop.AopActivity
+import com.ydl.list.coordinator.activity.CoordinatorListActivity
+import com.ydl.list.coordinator.activity.CoordinatorSimpleActivity
 import com.ydl.list.ui.activity.DialogActivity
 import com.ydl.list.ui.activity.GuideActivity
 import com.ydl.list.ui.activity.ImageSelectActivity
@@ -24,7 +26,7 @@ class MainActivity : BaseActivity() {
         "Camera",
         "dialog",
         "Guide",
-        "CoordinatorLayout"
+        "CoordinatorList"
     )
 
     private val mainAdapter = MainAdapter(list).apply {
@@ -41,7 +43,7 @@ class MainActivity : BaseActivity() {
                            }) }
                    4->{ customStartActivity(DialogActivity::class.java) }
                    5->{ GuideActivity.start(this@MainActivity) }
-                   6->{ CoordinatorLayoutActivity.start(this@MainActivity)}
+                   6->{ CoordinatorListActivity.start(this@MainActivity)}
 
                 }
             }

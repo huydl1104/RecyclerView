@@ -1,4 +1,4 @@
-package com.ydl.list
+package com.ydl.list.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ydl.list.R
 
 
 class RecyclerAdapter(context: Context?, datas: List<String>?) :

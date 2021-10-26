@@ -28,9 +28,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="n">
         <activity
-            android:name=".ui.activity.DialogActivity"
+            android:name=".coordinator.activity.CoordinatorListActivity"
             android:exported="true" />
-        <!-- 表示当前已经适配了分区存储 -->
+        <activity
+            android:name=".ui.activity.DialogActivity"
+            android:exported="true" /> <!-- 表示当前已经适配了分区存储 -->
         <meta-data
             android:name="ScopedStorage"
             android:value="true" /> <!-- 适配 Android 7.0 文件意图 -->
@@ -63,7 +65,7 @@
             android:name=".aop.AopActivity"
             android:exported="true" />
         <activity
-            android:name=".CoordinatorLayoutActivity"
+            android:name=".coordinator.activity.CoordinatorSimpleActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
