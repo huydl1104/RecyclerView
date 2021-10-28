@@ -9,10 +9,7 @@ import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
 import com.ydl.list.aop.AopActivity
 import com.ydl.list.coordinator.activity.CoordinatorListActivity
-import com.ydl.list.ui.activity.BrowserActivity
-import com.ydl.list.ui.activity.DialogActivity
-import com.ydl.list.ui.activity.GuideActivity
-import com.ydl.list.ui.activity.ImageSelectActivity
+import com.ydl.list.ui.activity.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_recycler.*
 import kotlinx.android.synthetic.main.activity_recycler.recyclerView
@@ -26,7 +23,8 @@ class MainActivity : BaseActivity() {
         "Camera",
         "dialog",
         "Guide",
-        "CoordinatorList"
+        "CoordinatorList",
+        "blurView"
     )
 
     override fun getLayoutId(): Int {
@@ -60,6 +58,7 @@ class MainActivity : BaseActivity() {
             4->{ customStartActivity(DialogActivity::class.java) }
             5->{ GuideActivity.start(this@MainActivity) }
             6->{ CoordinatorListActivity.start(this@MainActivity)}
+            7->{ BlurViewActivity.start(this@MainActivity)}
 
         }
     }

@@ -5,4 +5,7 @@
 
     <!-- 短信验证码的长度 -->
     <integer name="sms_code_length">4</integer>
+
+    <integer name="default_blur_radius">15</integer>
+    <integer name="default_downsample_factor">8</integer>
 </resources>
