@@ -24,7 +24,8 @@ class MainActivity : BaseActivity() {
         "dialog",
         "Guide",
         "CoordinatorList",
-        "blurView"
+        "blurView",
+        "test"
     )
 
     override fun getLayoutId(): Int {
@@ -59,6 +60,7 @@ class MainActivity : BaseActivity() {
             5->{ GuideActivity.start(this@MainActivity) }
             6->{ CoordinatorListActivity.start(this@MainActivity)}
             7->{ BlurViewActivity.start(this@MainActivity)}
+            8->{ customStartActivity(TestWorkActivity::class.java)}
 
         }
     }
