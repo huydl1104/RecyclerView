@@ -28,6 +28,7 @@
         <entry key="app/src/main/res/drawable/delete_ic.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/drawable/dialog_input_bg.xml" value="0.228125" />
         <entry key="app/src/main/res/drawable/example_bg.xml" value="0.23958333333333334" />
+        <entry key="app/src/main/res/drawable/fab_bcg.xml" value="0.29814814814814816" />
         <entry key="app/src/main/res/drawable/guide_indicator_selected.xml" value="0.23958333333333334" />
         <entry key="app/src/main/res/drawable/home_found_off_ic.xml" value="0.23958333333333334" />
         <entry key="app/src/main/res/drawable/home_found_selector.xml" value="0.23958333333333334" />
@@ -62,6 +63,7 @@
         <entry key="app/src/main/res/layout/activity_crash.xml" value="0.317481884057971" />
         <entry key="app/src/main/res/layout/activity_dialog.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_part_one.xml" value="0.2259963768115942" />
         <entry key="app/src/main/res/layout/activity_recycler.xml" value="0.2140625" />
         <entry key="app/src/main/res/layout/activity_restart.xml" value="0.317481884057971" />
         <entry key="app/src/main/res/layout/activity_test_work.xml" value="0.2259963768115942" />
@@ -99,6 +101,8 @@
         <entry key="app/src/main/res/layout/pay_password_dialog.xml" value="0.30842391304347827" />
         <entry key="app/src/main/res/layout/pay_password_normal_item.xml" value="0.20208333333333334" />
         <entry key="app/src/main/res/layout/picker_item.xml" value="0.30842391304347827" />
+        <entry key="app/src/main/res/layout/recycler_header.xml" value="0.2259963768115942" />
+        <entry key="app/src/main/res/layout/recycler_item.xml" value="0.2259963768115942" />
         <entry key="app/src/main/res/layout/safe_dialog.xml" value="0.30842391304347827" />
         <entry key="app/src/main/res/layout/select_item.xml" value="0.30842391304347827" />
         <entry key="app/src/main/res/layout/status_empty_ic.xml" value="0.29393115942028986" />

@@ -27,12 +27,15 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="n">
+        <activity
+            android:name=".coordinator.activity.PartOneActivity"
+            android:exported="true" />
 
         <service
             android:name=".service.MyJobWorkService"
             android:enabled="true"
-            android:permission="android.permission.BIND_JOB_SERVICE"
-            android:exported="true"/>
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity
             android:name=".TestWorkActivity"

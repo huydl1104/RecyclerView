@@ -256,7 +256,7 @@
     <!-- 拍照和拍摄 -->
     <string name="camera_launch_fail">无法启动相机</string>
     <string name="camera_image_error">目标地址错误</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="imageview_description">imageview</string>
 
@@ -280,4 +280,12 @@
 	</string>
     <string name="title_mup_name">Saúl Molinero</string>
     <string name="subtitle_mup">Here I am with a subtitle</string>
+    <string name="fab_description">FAB button description</string>
+    <string name="part_one">Part One</string>
+    <string name="part_two">Part Two</string>
+    <string name="part_three">Part Three</string>
+    <string name="tab_2">TAB 2</string>
+    <string name="tab_1">TAB 1</string>
+
+
 </resources>

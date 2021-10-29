@@ -22,9 +22,9 @@ class CoordinatorListActivity : BaseActivity() {
         "simple",
         "simple1",
         "simple2",
-        "simple3"
+        "simple3",
+        "simple4"
     )
-
 
     override fun getLayoutId(): Int = R.layout.activity_coordinator_list
 
@@ -49,6 +49,7 @@ class CoordinatorListActivity : BaseActivity() {
             1 -> { CoordinatorSimple1Activity.start(this@CoordinatorListActivity) }
             2 -> { CoordinatorSimple2Activity.start(this@CoordinatorListActivity) }
             3 -> { CollapsingActivity.start(this@CoordinatorListActivity)}
+            4 -> { startActivity(Intent(this,PartOneActivity::class.java))}
         }
     }
 
