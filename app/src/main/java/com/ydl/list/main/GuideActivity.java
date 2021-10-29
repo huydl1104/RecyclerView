@@ -1,6 +1,5 @@
-package com.ydl.list.ui.activity;
+package com.ydl.list.main;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -13,9 +12,9 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.gyf.immersionbar.ImmersionBar;
 import com.hjq.toast.ToastUtils;
 import com.ydl.list.R;
-import com.ydl.list.activity.HomeActivity;
 import com.ydl.list.adapter.GuideAdapter;
 import com.ydl.list.aop.actions.SingleClick;
+import com.ydl.list.ui.activity.AppActivity;
 
 import me.relex.circleindicator.CircleIndicator3;
 

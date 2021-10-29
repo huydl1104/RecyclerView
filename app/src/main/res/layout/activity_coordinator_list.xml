@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".coordinator.activity.CoordinatorListActivity">
+    tools:context=".main.CoordinatorListActivity">
 
     <com.hjq.bar.TitleBar
         android:id="@+id/titlebar"

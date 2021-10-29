@@ -1,4 +1,4 @@
-package com.ydl.list
+package com.ydl.list.main
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -6,17 +6,13 @@ import android.app.job.JobInfo
 import android.app.job.JobScheduler
 import android.app.job.JobWorkItem
 import android.content.ComponentName
-import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.annotation.RequiresApi
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.getSystemService
 import com.ydl.list.service.MyJobWorkService
-import androidx.core.content.ContextCompat.getSystemService
+import com.ydl.list.R
 import kotlinx.android.synthetic.main.activity_test_work.*
 
 

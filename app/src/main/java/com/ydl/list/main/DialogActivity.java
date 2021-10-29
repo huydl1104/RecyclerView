@@ -1,4 +1,4 @@
-package com.ydl.list.ui.activity;
+package com.ydl.list.main;
 
 import android.content.Intent;
 import android.view.Gravity;
@@ -24,6 +24,7 @@ import com.ydl.list.dialog.TipsDialog;
 import com.ydl.list.dialog.UpdateDialog;
 import com.ydl.list.dialog.WaitDialog;
 import com.ydl.list.manager.DialogManager;
+import com.ydl.list.ui.activity.AppActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;

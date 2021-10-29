@@ -1,4 +1,4 @@
-package com.ydl.list.ui.activity;
+package com.ydl.list.main;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -25,6 +25,9 @@ import com.ydl.list.aop.actions.SingleClick;
 import com.ydl.list.dialog.AlbumDialog;
 import com.ydl.list.manager.ThreadPoolManager;
 import com.ydl.list.ui.action.StatusAction;
+import com.ydl.list.ui.activity.AppActivity;
+import com.ydl.list.ui.activity.CameraActivity;
+import com.ydl.list.ui.activity.ImagePreviewActivity;
 import com.ydl.list.views.FloatActionButton;
 import com.ydl.list.views.StatusLayout;
 

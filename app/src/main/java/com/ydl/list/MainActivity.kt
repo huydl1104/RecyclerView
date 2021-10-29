@@ -7,8 +7,8 @@ import com.hjq.toast.ToastUtils
 import com.ydl.list.activity.*
 import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
-import com.ydl.list.aop.AopActivity
-import com.ydl.list.coordinator.activity.CoordinatorListActivity
+import com.ydl.list.main.CoordinatorListActivity
+import com.ydl.list.main.*
 import com.ydl.list.ui.activity.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_recycler.*

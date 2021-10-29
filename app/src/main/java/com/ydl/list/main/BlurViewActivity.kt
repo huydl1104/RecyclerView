@@ -1,4 +1,4 @@
-package com.ydl.list.ui.activity
+package com.ydl.list.main
 
 import android.animation.Animator
 import android.animation.AnimatorSet

@@ -1,4 +1,4 @@
-package com.ydl.list.coordinator.activity
+package com.ydl.list.main
 
 import android.content.Context
 import android.content.Intent
@@ -8,13 +8,14 @@ import com.ydl.list.R
 import com.ydl.list.activity.CollapsingActivity
 import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener
+import com.ydl.list.coordinator.activity.*
 import kotlinx.android.synthetic.main.activity_coordinator_list.*
 
 class CoordinatorListActivity : BaseActivity() {
 
     companion object{
         fun start(context: Context){
-            context.startActivity(Intent(context,CoordinatorListActivity::class.java))
+            context.startActivity(Intent(context, CoordinatorListActivity::class.java))
         }
     }
 
@@ -46,12 +47,18 @@ class CoordinatorListActivity : BaseActivity() {
 
     private fun jump(postion: Int) {
         when(postion){
-            0 -> { CoordinatorSimpleActivity.start(this@CoordinatorListActivity) }
-            1 -> { CoordinatorSimple1Activity.start(this@CoordinatorListActivity) }
-            2 -> { CoordinatorSimple2Activity.start(this@CoordinatorListActivity) }
+            0 -> {
+                CoordinatorSimpleActivity.start(this@CoordinatorListActivity)
+            }
+            1 -> {
+                CoordinatorSimple1Activity.start(this@CoordinatorListActivity)
+            }
+            2 -> {
+                CoordinatorSimple2Activity.start(this@CoordinatorListActivity)
+            }
             3 -> { CollapsingActivity.start(this@CoordinatorListActivity)}
-            4 -> { startActivity(Intent(this,PartOneActivity::class.java))}
-            5 -> { startActivity(Intent(this,PartTwoActivity::class.java))}
+            4 -> { startActivity(Intent(this, PartOneActivity::class.java))}
+            5 -> { startActivity(Intent(this, PartTwoActivity::class.java))}
         }
     }
 

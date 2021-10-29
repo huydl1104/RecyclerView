@@ -41,10 +41,10 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity
-            android:name=".TestWorkActivity"
+            android:name=".main.TestWorkActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activity.BlurViewActivity"
+            android:name=".main.BlurViewActivity"
             android:exported="true" />
         <activity
             android:name=".coordinator.activity.CoordinatorSimple2Activity"
@@ -53,10 +53,10 @@
             android:name=".coordinator.activity.CoordinatorSimpleActivity"
             android:exported="true" />
         <activity
-            android:name=".coordinator.activity.CoordinatorListActivity"
+            android:name=".main.CoordinatorListActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activity.DialogActivity"
+            android:name=".main.DialogActivity"
             android:exported="true" /> <!-- 表示当前已经适配了分区存储 -->
         <meta-data
             android:name="ScopedStorage"
@@ -72,13 +72,13 @@
         </provider>
 
         <activity
-            android:name=".ui.activity.BrowserActivity"
+            android:name=".main.BrowserActivity"
             android:exported="true" />
         <activity
             android:name=".ui.activity.VideoSelectActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activity.ImageSelectActivity"
+            android:name=".main.ImageSelectActivity"
             android:exported="true" />
         <activity
             android:name=".crash.RestartActivity"
@@ -87,7 +87,7 @@
             android:name=".crash.CrashActivity"
             android:exported="true" />
         <activity
-            android:name=".aop.AopActivity"
+            android:name=".main.AopActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
@@ -98,7 +98,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecyclerActivity" />
+        <activity android:name=".main.RecyclerActivity" />
         <activity android:name=".activity.RefreshAndMoreActivity1" />
         <activity android:name=".activity.RefreshAndMoreActivity2" />
         <activity android:name=".activity.HeaderFooterActivity" />
@@ -123,7 +123,7 @@
         <activity android:name=".activity.ScrollActivity" />
         <activity android:name=".activity.EditActivity" />
         <activity android:name=".ui.activity.CameraActivity" />
-        <activity android:name=".ui.activity.GuideActivity" />
+        <activity android:name=".main.GuideActivity" />
         <activity android:name=".coordinator.activity.CoordinatorSimple1Activity" />
     </application>
 

@@ -1,10 +1,10 @@
-package com.ydl.list
+package com.ydl.list.main
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.ydl.list.R
 import com.ydl.list.activity.*
 import com.ydl.list.adapter.MainAdapter
 import com.ydl.list.adapter.MyClickListener

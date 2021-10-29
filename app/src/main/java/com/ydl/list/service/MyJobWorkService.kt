@@ -12,9 +12,8 @@ import android.os.AsyncTask
 import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresApi
-import com.ydl.list.MainActivity
 import com.ydl.list.R
-import com.ydl.list.TestWorkActivity
+import com.ydl.list.main.TestWorkActivity
 
 
 /**

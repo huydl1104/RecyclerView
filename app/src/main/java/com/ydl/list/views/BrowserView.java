@@ -41,7 +41,7 @@ import com.ydl.list.dialog.InputDialog;
 import com.ydl.list.dialog.MessageDialog;
 import com.ydl.list.dialog.TipsDialog;
 import com.ydl.list.layout.NestedScrollWebView;
-import com.ydl.list.ui.activity.ImageSelectActivity;
+import com.ydl.list.main.ImageSelectActivity;
 import com.ydl.list.ui.activity.VideoSelectActivity;
 import com.ydl.list.utils.LogCustomUtils;
 import com.ydl.list.utils.PermissionCallback;
