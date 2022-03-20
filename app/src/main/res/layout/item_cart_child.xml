@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/cb_ischeck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:clickable="false" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cb_ischeck"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:layout_alignTop="@id/iv_image"
+        android:layout_toRightOf="@id/iv_image"
+        android:paddingLeft="16dp"
+        android:text="极品豆腐渣" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:layout_alignBottom="@id/iv_image"
+        android:layout_toRightOf="@id/iv_image"
+        android:paddingLeft="16dp"
+        android:text="￥ 16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:layout_alignBottom="@id/iv_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="16dp"
+        android:text="x1" />
+</RelativeLayout>

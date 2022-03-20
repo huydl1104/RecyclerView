@@ -125,6 +125,7 @@
         <activity android:name=".ui.activity.CameraActivity" />
         <activity android:name=".main.GuideActivity" />
         <activity android:name=".coordinator.activity.CoordinatorSimple1Activity" />
+        <activity android:name=".activity.TreeRecyclerVIew" />
     </application>
 
 </manifest>

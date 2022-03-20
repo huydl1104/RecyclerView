@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#ccc"
+    android:orientation="vertical"
+    android:paddingLeft="8dp">
+
+    <CheckBox
+        android:id="@+id/cb_ischeck"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:paddingLeft="8dp"
+        android:text="级数:" />
+
+</RelativeLayout>

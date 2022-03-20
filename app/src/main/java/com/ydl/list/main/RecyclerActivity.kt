@@ -35,7 +35,8 @@ class RecyclerActivity : AppCompatActivity(){
         "主页面",
         "流标签",
         "整页滑动",
-        "EditText下拉列表"
+        "EditText下拉列表",
+        "TreeRecyclerView"
     )
 
     private val mainAdapter = MainAdapter(list).apply {
@@ -64,6 +65,7 @@ class RecyclerActivity : AppCompatActivity(){
                     19->{customStartActivity(TagRecyclerViewActivity::class.java)}
                     20->{customStartActivity(ScrollActivity::class.java)}
                     21->{customStartActivity(EditActivity::class.java)}
+                    22->{customStartActivity(TreeRecyclerVIew::class.java)}
                 }
             }
         }
